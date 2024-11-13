@@ -7,6 +7,7 @@ import utils.GenericActions;
 
 public class CartPage {
 
+	@SuppressWarnings("unused")
 	private final WebDriver driver;
 	private final GenericActions actions;
 

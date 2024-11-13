@@ -17,15 +17,6 @@ public class LoginPage {
 	}
 
 	// --------------------- Locators ---------------------
-	public final By loginEmail = By.cssSelector("input[data-qa='login-email']");
-	public final By loginPwd = By.cssSelector("input[data-qa='login-password']");
-	public final By loginButton = By.cssSelector("button[data-qa='login-button']");
-
-	// SignUp
-	public final By signupName = By.cssSelector("input[data-qa='signup-name']");
-	public final By signupEmail = By.cssSelector("input[data-qa='signup-email']");
-	public final By signupButton = By.cssSelector("button[data-qa='signup-button']");
-
 	// Account Information form
 	public final By accountInfoName = By.id("name");
 	public final By accountInfoEmail = By.id("email");
@@ -36,6 +27,7 @@ public class LoginPage {
 	public final By accountInfoMonth = By.id("months");
 	public final By accountInfoYear = By.id("years");
 
+	//Address Information form
 	public final By fNameTxt = By.id("first_name");
 	public final By lNameTxt = By.id("last_name");
 	public final By companyTxt = By.id("company");
@@ -48,6 +40,16 @@ public class LoginPage {
 	public final By mobileTxt = By.id("mobile_number");
 	public final By createAccountButton = By.cssSelector("button[data-qa='create-account']");
 
+	//Login fields and button
+	public final By loginEmail = By.cssSelector("input[data-qa='login-email']");
+	public final By loginPwd = By.cssSelector("input[data-qa='login-password']");
+	public final By loginButton = By.cssSelector("button[data-qa='login-button']");
+
+	// SignUp fields and button
+	public final By signupName = By.cssSelector("input[data-qa='signup-name']");
+	public final By signupEmail = By.cssSelector("input[data-qa='signup-email']");
+	public final By signupButton = By.cssSelector("button[data-qa='signup-button']");
+	
 	public final By continueButton = By.cssSelector("a[data-qa='continue-button']");
 
 	// Text messages

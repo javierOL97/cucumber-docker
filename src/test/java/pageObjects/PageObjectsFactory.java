@@ -49,15 +49,15 @@ public class PageObjectsFactory implements IPageObject {
 		}
 	}
 
+	public GenericActions getGenericActions() {
+		return genericActions;
+	}
+
 	// This method sets our webdriver required in PageObjectManager Singleton
 	public void setDriver(WebDriver driver) {
 		if (this.driver == null) {
 			this.driver = driver;
 			genericActions = new GenericActions(driver);
 		}
-	}
-
-	public GenericActions getGenericActions() {
-		return genericActions;
 	}
 }

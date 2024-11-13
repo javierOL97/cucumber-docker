@@ -48,6 +48,8 @@ public class Hooks {
 			byte[] fileContent = FileUtils.readFileToByteArray(sourcePath);
 			scenario.attach(fileContent, "image/png", "image");
 			SingletonFactory.cleanObjectFactory();
+			//Suggest running the Garbage Collector.
+			System.gc();
 		}
 
 	}
