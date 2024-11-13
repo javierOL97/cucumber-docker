@@ -17,8 +17,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GenericActions {
 
-	private WebDriver driver;
-	private WebDriverWait wait;
+	private final WebDriver driver;
+	private final WebDriverWait wait;
 	private final int maxWaitTime = 20;
 
 	public GenericActions(WebDriver driver) {
@@ -168,5 +168,4 @@ public class GenericActions {
 		boolean response = (text.equalsIgnoreCase(option.getText())) ? true : false;
 		return response;
 	}
-	
 }

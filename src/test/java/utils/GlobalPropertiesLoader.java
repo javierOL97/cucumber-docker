@@ -5,15 +5,15 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class GlobalPropertiesLoader {
-	
-	private Properties prop;
-	
-	//GlobalProperties Singleton
-	//Private constructor to prevent the class is instantiated outside this class 
+
+	private final Properties prop;
+
+	// GlobalProperties Singleton
+	// Private constructor to prevent the class is instantiated outside this class
 	private GlobalPropertiesLoader() {
-		
+
 		prop = new Properties();
-		
+
 		try {
 			FileInputStream fis = new FileInputStream("src/test/resources/global.properties");
 			prop.load(fis);
@@ -25,9 +25,9 @@ public class GlobalPropertiesLoader {
 	public String getBrowserName() {
 		return prop.getProperty(Keywords.BROWSER.toString());
 	}
-	
+
 	public String getProperty(String key) {
 		return prop.getProperty(key);
 	}
-	
+
 }
