@@ -13,12 +13,12 @@ import pageObjects.*;
 public class LogInPageStepDef {
 
 	@SuppressWarnings("unused")
-	private WebDriver driver;
-	private PageObjectsFactory pageObjectFactory;
+	private final WebDriver driver;
+	private final PageObjectsFactory pageObjectFactory;
 
-	private GenericActions actions;
-	private HomePage homePage;
-	private LoginPage loginPage;
+	private final GenericActions actions;
+	private final HomePage homePage;
+	private final LoginPage loginPage;
 
 	public LogInPageStepDef() {
 		this.driver = SingletonFactory.getSingletonInstance(DriverFactory.class).getBrowserManager().getDriver();

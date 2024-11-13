@@ -5,7 +5,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class FirefoxManager implements IBrowserManager{
+public class FirefoxManager implements IBrowserManager {
 
 	@Override
 	public WebDriver getDriver() {
